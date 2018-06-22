@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django_user_agents.utils import get_user_agent
 # Create your views here.
 
@@ -21,4 +21,6 @@ def a(request):
 
 
 def test(request):
-    return JsonResponse({'test': 1})
+    print("A request is received.")
+    return JsonResponse({'wahaha': 1})
+    #return HttpResponse(json.dumps({"msg":"ok!"}))
