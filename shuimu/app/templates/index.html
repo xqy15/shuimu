@@ -1,1 +1,9 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="shortcut icon" href="/favicon.ico"><title>React App</title><link href="/static/css/main.40b4a62f.css" rel="stylesheet"></head><body><div id="root"></div><script type="text/javascript" src="/static/js/main.812da3f7.js"></script></body></html>
+{% extends "frontend/base.html" %}
+{% load static %}
+
+{% block title %}水木艺链{% endblock %}
+
+{% block css %}
+    {{ block.super }}
+    <link rel="stylesheet" type="text/css" href="{% static 'frontend/css/index.css' %}">
+{% endblock %}

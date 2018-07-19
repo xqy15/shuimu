@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	{% block head %}
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="keywords" content="水木艺链, 水木艺源, 艺术投资"/>
+	<title>{% block title %}Base{% endblock %}</title>
+
+	{% block css %}
+	<link rel="stylesheet" type="text/css" href="{% static 'frontend/css/base.css' %}"/>
+	<link rel="stylesheet" type="text/css" href="{% static 'frontend/css/bootstrap/bootstrap.css' %}"/>
+	{% endblock %}
+	{% block headjs %}{% endblock %}
+	{% endblock %}
+</head>
+<body>
+	{% block header %}
+	<header class="navbar navbar-static-top navbar-fixed-top" id="top" role="banner">
+		<div class="container">
+			
+		</div>
+	</header>
+	{% endblock %}
+</body>
+</html>
