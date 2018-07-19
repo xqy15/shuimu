@@ -24,3 +24,9 @@ def test(request):
     print("A request is received.")
     return JsonResponse({'wahaha': 1})
     #return HttpResponse(json.dumps({"msg":"ok!"}))
+
+def page1(request):
+    return render(request, 'page1.html')
+
+def page2(request):
+    return render(request, 'page2.html')
