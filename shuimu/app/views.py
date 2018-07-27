@@ -30,3 +30,9 @@ def page1(request):
 
 def page3(request):
     return render(request, 'page3.html')
+
+def page5(request):
+    return render(request, 'page5.html')
+
+def page7(request):
+    return render(request, 'page7.html')
