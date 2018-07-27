@@ -31,8 +31,11 @@ def page1(request):
 def page3(request):
     return render(request, 'page3.html')
 
-def page5(request):
-    return render(request, 'page5.html')
+def page51(request):
+    return render(request, 'page51.html')
+
+def page52(request):
+    return render(request, 'page52.html')
 
 def page7(request):
     return render(request, 'page7.html')

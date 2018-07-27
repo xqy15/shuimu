@@ -1,0 +1,403 @@
+{% load static %}
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<!--suppress ALL -->
+<html>
+  <head>
+    <style type="text/css">
+      #circle {
+        display: block; 
+        border-radius: 50%; 
+        height: 300px; 
+        width: 300px; 
+        margin: 0; 
+      }
+      #关于我们{
+        color: rgba(201,63,71,1);
+        opacity: 100%;
+        font-size: 14px;
+        line-height: 17px;
+      }
+      #合作伙伴{
+        color: rgba(194,197,223,1);
+        opacity: 100%;
+        font-size: 20px;
+        line-height: 24px;
+      }
+      #艺术社区{
+        color: rgba(0,0,0,54);
+        opacity: 100%;
+        font-size: 14px;
+        line-height: 17px;
+      }
+      #共享艺术，美好生活{
+        color: rgba(255,255,255,1);
+        opacity: 100%;
+        font-size: 18px;
+        line-height: 24px;
+      }
+      #科技，美好未来生活{
+        color: rgba(255,255,255,1);
+        opacity: 100%;
+        font-size: 14px;
+        line-height: 24px;
+      }
+      #个人中心{
+        color: rgba(0,0,0,1);
+        opacity: 65%;
+        font-size: 24px;
+        line-height: 36px;
+      }
+      #个人信息左{
+        color: rgba(0,0,0,1);
+        opacity: 50%;
+        font-size: 24px;
+        line-height: 36px;
+        border-style:solid;
+        border-width:1px;
+        border-color: rgba(151,151,151,1);
+        border-radius: 0px;
+      }
+      #投资报告私人定制{
+        color: rgba(0,0,0,1);
+        opacity: 50%;
+        font-size: 18px;
+        line-height: 27px;
+        border-style:solid;
+        border-width:1px;
+        border-color: rgba(151,151,151,1);
+        border-radius: 0px;
+      }
+      #个人信息右{
+        color: rgba(0,0,0,1);
+        opacity: 71%;
+        font-size: 24px;
+        line-height: 29px;
+      }
+      #修改头像{
+        color: rgba(0,0,0,1);
+        opacity: 71%;
+        font-size: 20px;
+        line-height: 24px;
+      }
+      #输入原密码{
+        color: rgba(0,0,0,1);
+        opacity: 71%;
+        font-size: 18px;
+        line-height: 21px;
+      }
+      #选择图片文件{
+        color: rgba(0,0,0,1);
+        opacity: 71%;
+        font-size: 14px;
+        line-height: 17px;
+      }
+      #rectangle1{
+        border-style:solid;
+        border-width:1px;
+        border-color: rgba(151,151,151,1);
+        opacity: 100%;
+        border-radius: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="position: absolute; 
+            width:1200px;
+            height:60px;
+            margin-top: 0px;">
+      <div style="position: relative; 
+            float:left;
+            margin-top: 0px;
+            margin-left: 100px;">
+          <img src="{% static 'frontend/image/page1/ArtPartner logo2.png' %}"/>  
+      </div>
+      <div id="关于我们" style="position: relative; 
+            float:left;
+            margin-top: 15px;
+            margin-left: 50px;">
+          <b>关于我们</b>
+      </div>
+      <div id="艺术社区" style="position: relative; 
+            float:left;
+            margin-top: 15px;
+            margin-left: 50px;">
+          <b>艺术社区</b>
+      </div>
+      <div id="艺术社区" style="position: relative; 
+            float:left;
+            margin-top: 15px;
+            margin-left: 50px;">
+          <b>why us</b>
+      </div>
+      <div id="艺术社区" style="position: relative; 
+            float:left;
+            margin-top: 15px;
+            margin-left: 50px;">
+          <b>合作伙伴</b>
+      </div>
+      <div id="艺术社区" style="position: relative; 
+            float:left;
+            margin-top: 15px;
+            margin-left: 50px;">
+          <b>开始投资</b>
+      </div>
+      <div id="艺术社区" style="position: relative; 
+            float:left;
+            margin-top: 15px;
+            margin-left: 50px;">
+          <b>查看更多</b>
+      </div>
+      <div style="position: relative; 
+            float:left;
+            margin-top: 15px;
+            margin-left: 5px;">
+          <img src="{% static 'frontend/image/page1/三角形（顶部）.png' %}"/>  
+      </div>
+      <div style="position: relative; 
+            float:left;
+            margin-top: 15px;
+            margin-left: 100px;">
+          <img src="{% static 'frontend/image/page1/分割线（顶部）.png' %}"/>  
+      </div>
+      <div style="position: relative; 
+            float:left;
+            margin-top: 15px;
+            margin-left: 20px;">
+          <img src="{% static 'frontend/image/page1/登陆.png' %}"/>  
+      </div>
+      <div style="position: relative; 
+            float:left;
+            margin-top: 15px;
+            margin-left: 20px;">
+          <img src="{% static 'frontend/image/page1/收藏.png' %}"/>  
+      </div>
+      <div style="position: relative; 
+            float:left;
+            margin-top: 15px;
+            margin-left: 20px;">
+          <img src="{% static 'frontend/image/page1/购物车.png' %}"/>  
+      </div>
+      <div style="position: relative; 
+            float:left;
+            margin-top: 15px;
+            margin-left: 20px;">
+          <img src="{% static 'frontend/image/page1/搜索.png' %}"/>  
+      </div>
+    </div>
+    <div style="position: absolute;
+        width:1200px;
+        height:1px;
+        margin-left:0px;
+        margin-top: 50px;">
+        <img src="{% static 'frontend/image/page3/线 顶部.png' %}" width="1200px"/>
+    </div>
+    <div id = "个人中心" style="position: absolute;
+        width:1200px;
+        height:1px;
+        margin-left:100px;
+        margin-top: 100px;">
+        <p>个人中心</p>
+    </div>
+    <div style="position: absolute;
+        width:1035px;
+        height:1px;
+        margin-left:100px;
+        margin-top: 150px;">
+        <img src="{% static 'frontend/image/page3/线 顶部.png' %}" width="1035px"/>
+    </div>
+
+    <div style="position: absolute;
+        width:250px;
+        height:280px;
+        margin-left:100px;
+        margin-top: 200px;"
+        align="center">
+        <div id = "个人信息左" 
+            style="position: relative; 
+            float:top;
+            margin-top: 0px;
+            margin-left: 0px;
+            width: 250px;
+            height: 70px;
+            line-height:30px;
+            background-color: rgba(234,235,246,1);"
+            >
+            <p>个人信息</p>
+        </div>
+        <div id = "个人信息左" 
+            style="position: relative; 
+            float:top;
+            margin-top: 0px;
+            margin-left: 0px;
+            width: 250px;
+            height: 70px;
+            line-height:30px;
+            background-color: rgba(234,235,246,1);">
+            <p>我的收藏</p>
+        </div>
+        <div id = "投资报告私人定制" 
+            style="position: relative; 
+            float:top;
+            margin-top: 0px;
+            margin-left: 0px;
+            width: 250px;
+            height: 70px;
+            line-height:30px;
+            background-color: rgba(234,235,246,1);">
+            <p>投资报告私人订制</p>
+        </div>
+        <div id = "个人信息左" 
+            style="position: relative; 
+            float:top;
+            margin-top: 0px;
+            margin-left: 0px;
+            width: 250px;
+            height: 70px;
+            line-height:30px;
+            background-color: rgba(234,235,246,1);">
+            <p>在线客服</p>
+        </div>
+    </div>
+
+    <div style="position: absolute;
+        width:600px;
+        margin-left:400px;
+        margin-top: 150px;"
+        >
+        <form>
+        <div id = "个人信息右" 
+            style="position: relative; 
+            float:top;
+            margin-top: 0px;
+            margin-left: 0px;">
+            <p>个人信息</p>
+        </div>
+        <div id = "修改密码" 
+            style="position: relative; 
+            float:top;
+            margin-top: 50px;
+            margin-left: 0px;">
+            用户名&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="username" style="width:300px;border:1px solid;border-radius:10px; height:30px;">
+        </div>
+        <div id = "修改密码" 
+            style="position: relative; 
+            float:top;
+            margin-top: 50px;
+            margin-left: 0px;">
+            修改密码&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input type="text" value="请输入原密码" id="tx_old" name="password"  style="text-align:center;width:300px;border:1px solid;border-radius:10px; height:30px;">
+            <input type="password" name="password"  style="display:none;width:300px;border:1px solid;border-radius:10px; height:30px;" id="pwd_old">
+
+        </div>
+        <div id = "修改密码" 
+            style="position: relative; 
+            float:top;
+            margin-top: 50px;
+            margin-left: 0px;">
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input type="text" value="请输入新密码" id="tx_new" name="password"  style="text-align:center;width:300px;border:1px solid;border-radius:10px; height:30px;">
+            <input type="password" name="password"  style="display:none;width:300px;border:1px solid;border-radius:10px; height:30px;" id="pwd_new">
+        </div>
+        <div id = "修改密码" 
+            style="position: relative; 
+            float:top;
+            margin-top: 50px;
+            margin-left: 0px;">
+            修改头像
+        </div>
+        <div style="position: relative; 
+            float:top;
+            margin-top: 50px;
+            margin-left: 120px;
+            width: 200px;
+            height:200px;
+            border:1px solid;border-radius:10px;">
+            <button style="position: relative; 
+            float:top;
+            margin-top: 90px;
+            margin-left: 27px;
+            width: 150px;
+            height:30px;
+            border:1px solid;border-radius:10px;text-align:center;">选择图片文件</button>
+        </div>
+        <div id = "修改密码" 
+            style="position: relative; 
+            float:top;
+            margin-top: 85px;
+            margin-left: 0px;">
+            投资风格&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input type="text" value="翔把这里用bootstrap改成spinner html没有spinner" name="style" style="width:300px;border:1px solid;border-radius:10px; height:30px;">
+        </div>
+        </form>
+    </div>
+    <script type="text/javascript">
+    var tx_old = document.getElementById("tx_old"), pwd_old = document.getElementById("pwd_old");
+    tx_old.onfocus = function () {
+        if (this.value != "请输入原密码")
+            return;
+        this.style.display = "none";
+        pwd_old.style.display = "";
+        pwd_old.value = "";
+        pwd_old.focus();
+    }
+    pwd_old.onblur = function () {
+        if (this.value != "")
+            return;
+        this.style.display = "none";
+        tx_old.style.display = "";
+        tx_old.value = "请输入原密码";
+    }
+    var tx_new = document.getElementById("tx_new"), pwd_new = document.getElementById("pwd_new");
+    tx_new.onfocus = function () {
+        if (this.value != "请输入新密码")
+            return;
+        this.style.display = "none";
+        pwd_new.style.display = "";
+        pwd_new.value = "";
+        pwd_new.focus();
+    }
+    pwd_new.onblur = function () {
+        if (this.value != "")
+            return;
+        this.style.display = "none";
+        tx_new.style.display = "";
+        tx_new.value = "请输入新密码";
+    }
+    </script>
+    <div style="position: absolute;
+            margin-left: 0px;
+            margin-top: 1015px;
+            height: 300px;
+            width: 1200px;
+            background-color: rgba(191,217,254,1);">
+      <!-- <b>partner块</b> -->
+      <div id = "共享艺术，美好生活" style="position: relative;
+                  float:left;
+                  margin-left:200px;
+                  margin-top:100px;"
+                  align="center">
+          <b>keep in touch</b></br></br>
+          <img src="{% static 'frontend/image/page1/底部蓝色信息框/地址.png' %}"  />
+          <img src="{% static 'frontend/image/page1/底部蓝色信息框/电话.png' %}"  />
+          <img src="{% static 'frontend/image/page1/底部蓝色信息框/邮箱.png' %}"  />
+      </div>
+      <div  style="position: relative;
+                  float:left;
+                  margin-left:200px;
+                  margin-top:100px;"
+                  align="center">
+          <img src="{% static 'frontend/image/page1/ArtPartner logo1.png' %}"  />
+      </div>
+      <div id = "科技，美好未来生活" style="position: relative;
+                  float:left;
+                  margin-left:200px;
+                  margin-top:100px;"
+                  >
+          </br>
+          <b align="center">“科技，美好未来生活”</b></br></br></br></br></br></br>
+          <b align="right">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp北京水木未来科技有限公司</b>
+      </div>
+    </div>
+  </body>
+</html>
