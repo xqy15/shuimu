@@ -42,9 +42,71 @@
                 font-size: 14px;
                 line-height: 24px;
             }
-            
-            
-                </style>
+            #rectangle{
+                opacity: 100%;
+                border:1px solid;
+                border-color:  rgb(185,185,185);
+                border-radius: 0px;
+            } 
+            #油画{
+                opacity: 100%;
+                font-size: 13px;
+                color: rgba(255,255,255,1);
+                border:1px solid;
+                border-color:  rgb(185,185,185);
+                border-radius: 10px;
+                background-color: rgba(191,217,254,1);
+            }  
+            #标题1{
+                opacity: 100%;
+                font-size: 14px;
+                line-height: 17px;
+                color: rgba(0,0,0,1);
+            }
+            #标题2{
+                opacity: 80%;
+                font-size: 12px;
+                line-height: 15px;
+                color: rgba(0,0,0,1);
+            }
+            #价格{
+                opacity: 80%;
+                font-size: 18px;
+                line-height: 21px;
+                color: rgba(0,0,0,1);
+            }   
+            #price{
+                opacity: 80%;
+                font-size: 24px;
+                line-height: 28px;
+                color: rgba(0,0,0,1);
+            }  
+            #配送{
+                opacity: 75%;
+                font-size: 14px;
+                line-height: 17px;
+                color: rgba(0,0,0,1);
+            }
+            #加入购物车{
+                opacity: 100%;
+                font-size: 18px;
+                line-height: 21px;
+                color: rgba(0,0,0,1);
+                background-color: rgba(191,217,254,1);
+            }
+            #收藏{
+                opacity: 59%;
+                font-size: 18px;
+                line-height: 21px;
+                color: rgba(0,0,0,1);
+            }
+            #支持{
+                opacity: 75%;
+                font-size: 14px;
+                line-height: 17px;
+                color: rgba(0,0,0,1);
+            }                
+            </style>
         </head>
         <body>
             <div style="position: absolute;
@@ -138,6 +200,219 @@
                 <img src="{% static 'frontend/image/page3/线 顶部.png' %}" width="1200px"/>
             </div>
             
+            <div id="rectangle" style="position: absolute;
+                width:500px;
+                height:500px;
+                margin-left:50px;
+                margin-top: 110px;">
+                <div style="
+                    position: relative;
+                    float:left;
+                    margin-top: 466px;
+                    margin-left: 170px;">
+                    <img src="{% static 'frontend/image/page7/圆（主展示图框内）.png' %}"/>
+                </div>
+                <div style="
+                    position: relative;
+                    float:left;
+                    margin-top: 466px;
+                    margin-left: 42px;">
+                    <img src="{% static 'frontend/image/page7/圆（主展示图框内）.png' %}"/>
+                </div>
+                <div style="
+                    position: relative;
+                    float:left;
+                    margin-top: 466px;
+                    margin-left: 42px;">
+                    <img src="{% static 'frontend/image/page7/圆（主展示图框内）.png' %}"/>
+                </div>
+                <div style="
+                    position: relative;
+                    float:left;
+                    margin-top: 460px;
+                    margin-left: 150px;">
+                    <img src="{% static 'frontend/image/page7/图片放大.png' %}"/>
+                </div>
+            </div>
+
+            <div id = "油画" style="position: absolute;
+                margin-left:590px;
+                margin-top: 110px;
+                width:50px;
+                line-height:2px;
+                text-align:center;">
+                <p>油画</p>
+            </div>
+
+            <div style="position: absolute;
+                margin-left:660px;
+                margin-top: 100px;
+                width:430px;">
+                <div id = "标题1" style="position: relative;
+                    float:top;
+                    margin-left:0px;
+                    margin-top: 0px;
+                    width:430px;">
+                    <p>竹久梦二的一生，多情而短暂，绚烂的才华喷薄而出，像极了那樱花</p>
+                </div>
+
+                <div id = "标题2" style="position: relative;
+                    float:top;
+                    margin-left:0px;
+                    margin-top: 0px;
+                    width:430px;">
+                    <p>对画家丰子恺来说，梦二是启蒙他绘画生涯的灵感缪斯</p>
+                </div>
+
+                <div style="position: relative;
+                    float:top;
+                    margin-top: 0px;
+                    margin-left: 0px;
+                    width:451px;
+                    height:1px;">
+                    <img src="{% static 'frontend/image/page7/分割线1.png' %}"/>
+                </div>
+
+                <div id="价格" style="position: relative;
+                    float:top;
+                    margin-left:0px;
+                    margin-top: 30px;
+                    width:430px;">
+                    <div id="价格" style="position: relative;
+                    float:left;
+                    margin-left:0px;
+                    margin-top: 0px;
+                    width:50px;">
+                        <p>价格:</p>
+                    </div>
+                    
+                    <div id="price" style="position: relative;
+                    float:left;
+                    margin-left:20px;
+                    margin-top: -10px;
+                    width:200px;">
+                    <p>819.00 RMB</p>
+                    </div>
+                </div>
+
+                <div id="配送" style="position: relative;
+                    float:top;
+                    margin-left: 0px;
+                    margin-top: 100px;
+                    width:430px;">
+
+                    <div style="position: relative;
+                    float:left;
+                    margin-left:0px;
+                    margin-top: 0px;
+                    width:50px;">
+                        <p>配送至:</p>
+                    </div>
+                    
+                    <div style="position: relative;
+                    float:left;
+                    margin-left:10px;
+                    margin-top: 0px;
+                    width:300px;">
+                    <p>北京市朝阳区</p>
+                    </div>
+                </div>
+
+
+                <div style="position: relative;
+                    float:top;
+                    margin-top: 10px;
+                    margin-left: 0px;
+                    width:451px;
+                    height:1px;">
+                    <img src="{% static 'frontend/image/page7/分割线1.png' %}"/>
+                </div>
+
+                <div style="position: relative;
+                    float:top;
+                    margin-left: 0px;
+                    margin-top: 100px;
+                    width:430px;">
+
+                    <div style="position: relative;
+                    float:left;
+                    margin-left:0px;
+                    margin-top: 0px;
+                    text-align:center;
+                    line-height:20px;
+                    width:50px;
+                    height:50px;
+                    border:1px solid;">
+                        <p>1</p>
+                    </div>
+                    <div style="position: relative;
+                        float:left;
+                        margin-left:0px;
+                        margin-top: 0px;
+                        text-align:center;
+                        line-height:0px;
+                        width:25px;
+                        height:50px;
+                        border:1px solid;">
+                        <div style="position: relative;
+                            float:top;
+                            margin-left:0px;
+                            margin-top: 0px;
+                            text-align:center;
+                            line-height:20px;
+                            width:23px;
+                            height:23px;
+                            border:1px solid;">
+                            +
+                        </div>
+                        <div style="position: relative;
+                            float:top;
+                            margin-left:0px;
+                            margin-top: 0px;
+                            text-align:center;
+                            line-height:20px;
+                            width:23px;
+                            height:23px;
+                            border:1px solid;">
+                            -
+                        </div>
+                    </div>
+                    
+                    <div id="加入购物车" style="position: relative;
+                        float:left;
+                        margin-left:25px;
+                        margin-top: 0px;
+                        width:120px;
+                        height:50px;
+                        text-align:center;">
+                    <p>加入购物车</p>
+                    </div>
+
+                    <div style="position: relative;
+                        float:left;
+                        margin-top: 20px;
+                        margin-left: 30px;
+                        width:20px;
+                        height:21px;">
+                        <img src="{% static 'frontend/image/page7/心（收藏）.png' %}"/>
+                    </div>
+
+                     <div id="收藏" style="position: relative;
+                        float:left;
+                        margin-left:10px;
+                        margin-top: 0px;
+                        width:40px;
+                        height:50px;
+                        text-align:center;">
+                    <p>收藏</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            
+
             <div style="position: absolute;
                 margin-left: 0px;
                 margin-top: 1015px;
