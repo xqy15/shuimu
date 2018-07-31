@@ -31,11 +31,17 @@ def page1(request):
 def page3(request):
     return render(request, 'page3.html')
 
+def page4(request):
+    return render(request, 'page4.html')
+
 def page51(request):
     return render(request, 'page51.html')
 
 def page52(request):
     return render(request, 'page52.html')
+
+def page6(request):
+    return render(request, 'page6.html')
 
 def page7(request):
     return render(request, 'page7.html')

@@ -26,7 +26,9 @@ urlpatterns = [
     url(r'^test$', views.test, name='test'),
     url(r'^page1/$', views.page1, name='page1'),
     url(r'^page3/$', views.page3, name='page3'),
+    url(r'^page4/$', views.page4, name='page4'),
     url(r'^page51/$', views.page51, name='page51'),
     url(r'^page52/$', views.page52, name='page52'),
+    url(r'^page6/$', views.page6, name='page6'),
     url(r'^page7/$', views.page7, name='page7'),
 ]
