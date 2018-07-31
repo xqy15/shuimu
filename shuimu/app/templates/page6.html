@@ -42,67 +42,71 @@
         font-size: 14px;
         line-height: 24px;
       }
-      #个人中心{
-        color: rgba(0,0,0,1);
-        opacity: 65%;
-        font-size: 24px;
-        line-height: 36px;
-      }
-      #个人信息左{
-        color: rgba(0,0,0,1);
-        opacity: 50%;
-        font-size: 24px;
-        line-height: 36px;
-        border-style:solid;
-        border-width:1px;
-        border-color: rgba(151,151,151,1);
-        border-radius: 0px;
-      }
-      #投资报告私人定制{
-        color: rgba(0,0,0,1);
-        opacity: 50%;
-        font-size: 18px;
-        line-height: 27px;
-        border-style:solid;
-        border-width:1px;
-        border-color: rgba(151,151,151,1);
-        border-radius: 0px;
-      }
-      #个人信息右{
+      #新用户注册{
         color: rgba(0,0,0,1);
         opacity: 71%;
         font-size: 24px;
-        line-height: 29px;
+        line-height: 30px;
       }
-      #修改头像{
+      #用户名等{
         color: rgba(0,0,0,1);
         opacity: 71%;
         font-size: 20px;
         line-height: 24px;
       }
-      #输入原密码{
+      #请输入{
         color: rgba(0,0,0,1);
         opacity: 71%;
         font-size: 18px;
         line-height: 21px;
       }
-      #选择图片文件{
+      #密码提示{
+        color: rgba(0,0,0,1);
+        opacity: 71%;
+        font-size: 12px;
+        line-height: 18px;
+      }
+      #自主输入{
         color: rgba(0,0,0,1);
         opacity: 71%;
         font-size: 14px;
         line-height: 17px;
       }
-      #rectangle1{
-        border-style:solid;
-        border-width:1px;
-        border-color: rgba(151,151,151,1);
+      #确认注册{
+        color: rgba(0,0,0,1);
+        opacity: 71%;
+        font-size: 20px;
+        line-height: 24px;
+        border:0px;
+        background-color: rgba(255,255,255,1);
+        width:150px;
+        height:40px;
+        text-align: center;
+        background-image:url("{% static 'frontend/image/page6/确认注册.png' %}");
+      } 
+      #rectangle3{
+        background-color: rgba(187,212,248,1);
         opacity: 100%;
-        border-radius: 0px;
-      }
+        border-radius: 8px;
+      }  
+      #获取验证码{
+        color: rgba(0,0,0,1);
+        opacity: 71%;
+        font-size: 14px;
+        line-height: 17px;
+        border:0px;
+        background-color: rgba(255,255,255,1);
+        width:80px;
+        height:40px;
+        background-image:url("{% static 'frontend/image/page6/获取验证码.png' %}");
+      }   
+
+
     </style>
   </head>
   <body>
-    <div style="position: absolute; 
+    <div style="position: relative;
+            float:top; 
             width:1200px;
             height:60px;
             margin-top: 0px;">
@@ -185,189 +189,418 @@
           <img src="{% static 'frontend/image/page1/搜索.png' %}"/>  
       </div>
     </div>
-    <div style="position: absolute;
+
+    <div style="position: relative;
+        float:top;
         width:1200px;
         height:1px;
         margin-left:0px;
-        margin-top: 50px;">
+        margin-top: 0px;">
         <img src="{% static 'frontend/image/page3/线 顶部.png' %}" width="1200px"/>
     </div>
-    <div id = "个人中心" style="position: absolute;
+
+    <div id = "rectangle1" style="position: relative;
+        float:top;
         width:1200px;
-        height:1px;
-        margin-left:100px;
-        margin-top: 100px;">
-        <p>个人中心</p>
-    </div>
-    <div style="position: absolute;
-        width:1035px;
-        height:1px;
-        margin-left:100px;
-        margin-top: 150px;">
-        <img src="{% static 'frontend/image/page3/线 顶部.png' %}" width="1035px"/>
-    </div>
-
-    <div style="position: absolute;
-        width:250px;
-        height:280px;
-        margin-left:100px;
-        margin-top: 200px;"
-        align="center">
-        <div id = "个人信息左" 
-            style="position: relative; 
-            float:top;
-            margin-top: 0px;
-            margin-left: 0px;
-            width: 250px;
-            height: 70px;
-            line-height:30px;
-            background-color: rgba(234,235,246,1);"
-            >
-            <p>个人信息</p>
-        </div>
-        <div id = "个人信息左" 
-            style="position: relative; 
-            float:top;
-            margin-top: 0px;
-            margin-left: 0px;
-            width: 250px;
-            height: 70px;
-            line-height:30px;
-            background-color: rgba(234,235,246,1);">
-            <p>我的收藏</p>
-        </div>
-        <div id = "投资报告私人定制" 
-            style="position: relative; 
-            float:top;
-            margin-top: 0px;
-            margin-left: 0px;
-            width: 250px;
-            height: 70px;
-            line-height:30px;
-            background-color: rgba(234,235,246,1);">
-            <p>投资报告私人订制</p>
-        </div>
-        <div id = "个人信息左" 
-            style="position: relative; 
-            float:top;
-            margin-top: 0px;
-            margin-left: 0px;
-            width: 250px;
-            height: 70px;
-            line-height:30px;
-            background-color: rgba(234,235,246,1);">
-            <p>在线客服</p>
-        </div>
-    </div>
-
-    <div style="position: absolute;
-        width:600px;
-        margin-left:400px;
+        height:650px;
+        margin-left:0px;
         margin-top: 150px;"
         >
-        <form>
-        <div id = "个人信息右" 
+        <div id = "新用户注册" 
             style="position: relative; 
             float:top;
-            margin-top: 0px;
-            margin-left: 0px;">
-            <p>个人信息</p>
+            margin-top: 20px;
+            margin-left: 52px;">
+            新用户注册
         </div>
-        <div id = "修改密码" 
+        <div
             style="position: relative; 
             float:top;
             margin-top: 50px;
-            margin-left: 0px;">
-            用户名&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="username" style="width:300px;border:1px solid;border-radius:10px; height:30px;">
-        </div>
-        <div id = "修改密码" 
-            style="position: relative; 
-            float:top;
-            margin-top: 50px;
-            margin-left: 0px;">
-            修改密码&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            <input type="text" value="请输入原密码" id="tx_old" name="password"  style="text-align:center;width:300px;border:1px solid;border-radius:10px; height:30px;">
-            <input type="password" name="password"  style="display:none;width:300px;border:1px solid;border-radius:10px; height:30px;" id="pwd_old">
+            margin-left: 0px;
+            width:1200px;
+            height:500px;">
+            <form>
+              <div
+                style="position: relative; 
+                float:left;
+                margin-top: 0px;
+                margin-left: 52px;
+                width:550px;
+                height:500px;">
+                <div
+                  style="position: relative; 
+                  float:top;
+                  margin-top: 0px;
+                  margin-left: 0px;">
 
+                  <div id="用户名等"
+                    style="position: relative; 
+                    float:left;
+                    margin-top: 20px;
+                    margin-left: 0px;">
+                    账号
+                  </div>
+                  <div id = "请输入" 
+                    style="position: relative; 
+                    float:left;
+                    margin-top: 0px;
+                    margin-left: 70px;">
+                    <input type="text" value="  请输入用户名" name="username" style="width:400px;border:1px solid;border-radius:8px; height:40px; opacity:71%;">
+                  </div>
+                </div>
+
+                <div
+                  style="position: relative; 
+                  float:top;
+                  margin-top: 70px;
+                  margin-left: 0px;">
+                  <div id="用户名等"
+                    style="position: relative; 
+                    float:left;
+                    margin-top: 10px;
+                    margin-left: 0px;">
+                    手机号码
+                  </div>
+                  <div id = "请输入" 
+                    style="position: relative; 
+                    float:left;
+                    margin-top: 0px;
+                    margin-left: 30px;">
+                    <input type="text" value="  请输入手机号码" name="phone" style="width:400px;border:1px solid;border-radius:8px; height:40px; opacity:71%;">
+                  </div>
+                </div>
+
+                <div
+                  style="position: relative; 
+                  float:top;
+                  margin-top: 140px;
+                  margin-left: 0px;">
+                  <div id="用户名等"
+                    style="position: relative; 
+                    float:left;
+                    margin-top: 10px;
+                    margin-left: 0px;">
+                    验证码
+                  </div>
+                  <div id = "请输入" 
+                    style="position: relative; 
+                    float:left;
+                    margin-top: 0px;
+                    margin-left: 50px;">
+                    <input type="text" value="  请输入验证码" name="confirmation" style="width:300px;border:1px solid;border-radius:8px; height:40px; opacity:71%;">
+                  </div>
+                  <div 
+                    style="position: relative; 
+                    float:left;
+                    margin-top: 0px;
+                    margin-left: 20px;">
+                    <input type="button"  id="获取验证码" value="获取验证码"/>
+                  </div>
+                </div>
+
+                <div
+                  style="position: relative; 
+                  float:top;
+                  margin-top: 210px;
+                  margin-left: 0px;">
+                  <div id="用户名等"
+                    style="position: relative; 
+                    float:left;
+                    margin-top: 10px;
+                    margin-left: 0px;">
+                    密码
+                  </div>
+                  <div id = "请输入" 
+                    style="position: relative; 
+                    float:left;
+                    margin-top: 0px;
+                    margin-left: 70px;">
+                    <input type="text" value="  请输入密码" id="tx" name="password"  style="center;width:400px;border:1px solid;border-radius:10px; height:40px;">
+                    <input type="password" name="password"  style="display:none;width:400px;border:1px solid;border-radius:10px; height:40px;" id="pwd">
+                  </div>
+                </div>
+
+                <div
+                  style="position: relative; 
+                  float:top;
+                  margin-top: 280px;
+                  margin-left: 0px;">
+                  <div id="用户名等"
+                    style="position: relative; 
+                    float:left;
+                    margin-top: 10px;
+                    margin-left: 0px;">
+                    确认密码
+                  </div>
+                  <div id = "请输入" 
+                    style="position: relative; 
+                    float:left;
+                    margin-top: 0px;
+                    margin-left: 30px;">
+                    <input type="text" value="  请输入确认密码" id="tx_c" name="password_c"  style="center;width:400px;border:1px solid;border-radius:10px; height:40px;">
+                    <input type="password" name="password_c"  style="display:none;width:400px;border:1px solid;border-radius:10px; height:40px;" id="pwd_c">
+                  </div>
+                </div>
+
+                <div id="密码提示"
+                  style="position: relative; 
+                  float:left;
+                  margin-top: 20px;
+                  margin-left: 112px;">
+                  密码为6位以上字母＋数字组合
+                </div>
+
+                <div
+                  style="position: relative; 
+                  float:top;
+                  margin-top: 420px;
+                  margin-left: 0px;">
+                  <div id="用户名等"
+                    style="position: relative; 
+                    float:left;
+                    margin-top: 10px;
+                    margin-left: 0px;">
+                    生日
+                  </div>
+                  <div id = "请输入" 
+                    style="position: relative; 
+                    float:left;
+                    margin-top: 0px;
+                    margin-left: 70px;">
+                    <input type="text" value="  请输入生日" name="birthday" style="width:400px;border:1px solid;border-radius:8px; height:40px; opacity:71%;">
+                  </div>
+                </div>
+
+                <div
+                  style="position: relative; 
+                  float:top;
+                  margin-top: 490px;
+                  margin-left: 0px;">
+                  <div id="用户名等"
+                    style="position: relative; 
+                    float:left;
+                    margin-top: 10px;
+                    margin-left: 0px;">
+                    性别
+                  </div>
+                  <div id = "请输入" 
+                    style="position: relative; 
+                    float:left;
+                    margin-top: 10px;
+                    margin-left: 70px;">
+                    男&nbsp&nbsp&nbsp&nbsp<input type="radio" name="sex" value="male" /> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    女&nbsp&nbsp&nbsp&nbsp<input type="radio" name="sex" value="female" /> 
+                  </div>
+                </div>
+
+
+              </div>
+              <div
+                style="position: relative; 
+                float:left;
+                margin-top: 0px;
+                margin-left: 0px;
+                width:1px;
+                height:500px;">
+                <img src="{% static 'frontend/image/page6/中部分割线.png' %}"/>  
+              </div>
+              <div
+                style="position: relative; 
+                float:left;
+                margin-top: 0px;
+                margin-left: 50px;
+                width:500px;
+                height:500px;">
+                <div
+                  style="position: relative; 
+                  float:top;
+                  margin-top: 0px;
+                  margin-left: 0px;">
+                  <div id="用户名等"
+                    style="position: relative; 
+                    float:left;
+                    margin-top: 10px;
+                    margin-left: 0px;">
+                    邮箱
+                  </div>
+                  <div id = "请输入" 
+                    style="position: relative; 
+                    float:left;
+                    margin-top: 0px;
+                    margin-left: 40px;">
+                    <input type="text" value="  请输入邮箱" name="email" style="width:400px;border:1px solid;border-radius:8px; height:40px; opacity:71%;">
+                  </div>
+                </div>
+
+                <div
+                  style="position: relative; 
+                  float:top;
+                  margin-top: 70px;
+                  margin-left: 0px;">
+                  <div id="用户名等"
+                    style="position: relative; 
+                    float:left;
+                    margin-top: 10px;
+                    margin-left: 0px;">
+                    有无投资经历
+                  </div>
+                  <div id = "请输入" 
+                    style="position: relative; 
+                    float:left;
+                    margin-top: 10px;
+                    margin-left: 70px;">
+                    有&nbsp&nbsp&nbsp&nbsp<input type="radio" name="experience" value="yes" /> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    无&nbsp&nbsp&nbsp&nbsp<input type="radio" name="experience" value="no" /> 
+                  </div>
+                </div>
+
+                <div
+                  style="position: relative; 
+                  float:top;
+                  margin-top: 140px;
+                  margin-left: 0px;">
+                  <div id="用户名等"
+                    style="position: relative; 
+                    float:left;
+                    margin-top: 10px;
+                    margin-left: 0px;">
+                    喜爱的艺术风格
+                  </div>
+                  <div id = "请输入" 
+                    style="position: relative; 
+                    float:left;
+                    margin-top: 0px;
+                    margin-left: 40px;">
+                    <input type="text" value="  下拉框，翔自己弄一下" name="art-style" style="width:150px;border:1px solid;border-radius:8px; height:40px; opacity:71%;">
+                  </div>
+                  <div id = "自主输入" 
+                    style="position: relative; 
+                    float:left;
+                    margin-top: 0px;
+                    margin-left: 20px;">
+                    <input type="text" value="  自主输入" name="art-free_style" style="width:100px;border:1px solid;border-radius:8px; height:40px; opacity:71%;">
+                  </div>
+                </div>
+
+                <div
+                  style="position: relative; 
+                  float:top;
+                  margin-top: 210px;
+                  margin-left: 0px;">
+                  <div id="用户名等"
+                    style="position: relative; 
+                    float:left;
+                    margin-top: 10px;
+                    margin-left: 0px;">
+                    投资风格
+                  </div>
+                  <div id = "请输入" 
+                    style="position: relative; 
+                    float:left;
+                    margin-top: 0px;
+                    margin-left: 100px;">
+                    <input type="text" value="  下拉框，翔自己弄一下" name="inversting-style" style="width:150px;border:1px solid;border-radius:8px; height:40px; opacity:71%;">
+                  </div>
+                </div>
+
+                <div
+                  style="position: relative; 
+                  float:top;
+                  margin-top: 280px;
+                  margin-left: 0px;">
+                  <div id="用户名等"
+                    style="position: relative; 
+                    float:left;
+                    margin-top: 10px;
+                    margin-left: 0px;">
+                    可接受的投资风险
+                  </div>
+                  <div id = "请输入" 
+                    style="position: relative; 
+                    float:left;
+                    margin-top: 0px;
+                    margin-left: 20px;">
+                    <input type="text" value="  下拉框，翔自己弄一下" name="inversting-risk" style="width:150px;border:1px solid;border-radius:8px; height:40px; opacity:71%;">
+                  </div>
+                </div>
+
+                <div
+                  style="position: relative; 
+                  float:top;
+                  margin-top: 350px;
+                  margin-left: 0px;">
+                  <div id="用户名等"
+                    style="position: relative; 
+                    float:left;
+                    margin-top: 10px;
+                    margin-left: 0px;">
+                    期望投资收益
+                  </div>
+                  <div id = "请输入" 
+                    style="position: relative; 
+                    float:left;
+                    margin-top: 0px;
+                    margin-left: 60px;">
+                    <input type="text" value="  下拉框，翔自己弄一下" name="inversting-income" style="width:150px;border:1px solid;border-radius:8px; height:40px; opacity:71%;">
+                  </div>
+                </div>
+
+                <div 
+                  style="position: relative; 
+                  float:top;
+                  margin-top: 490px;
+                  margin-left: 0px;
+                  width: 500px;
+                  text-align: center;"
+                  >
+                  <input id="确认注册" type="submit" value="确认注册">
+                </div>
+
+              </div>
+            </form>
         </div>
-        <div id = "修改密码" 
-            style="position: relative; 
-            float:top;
-            margin-top: 50px;
-            margin-left: 0px;">
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            <input type="text" value="请输入新密码" id="tx_new" name="password"  style="text-align:center;width:300px;border:1px solid;border-radius:10px; height:30px;">
-            <input type="password" name="password"  style="display:none;width:300px;border:1px solid;border-radius:10px; height:30px;" id="pwd_new">
-        </div>
-        <div id = "修改密码" 
-            style="position: relative; 
-            float:top;
-            margin-top: 50px;
-            margin-left: 0px;">
-            修改头像
-        </div>
-        <div style="position: relative; 
-            float:top;
-            margin-top: 50px;
-            margin-left: 120px;
-            width: 200px;
-            height:200px;
-            border:1px solid;border-radius:10px;">
-            <button style="position: relative; 
-            float:top;
-            margin-top: 90px;
-            margin-left: 27px;
-            width: 150px;
-            height:30px;
-            border:1px solid;border-radius:10px;text-align:center;">选择图片文件</button>
-        </div>
-        <div id = "修改密码" 
-            style="position: relative; 
-            float:top;
-            margin-top: 85px;
-            margin-left: 0px;">
-            投资风格&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            <input type="text" value="翔把这里用bootstrap改成spinner html没有spinner" name="style" style="width:300px;border:1px solid;border-radius:10px; height:30px;">
-        </div>
-        </form>
     </div>
     <script type="text/javascript">
-    var tx_old = document.getElementById("tx_old"), pwd_old = document.getElementById("pwd_old");
-    tx_old.onfocus = function () {
-        if (this.value != "请输入原密码")
+    var tx = document.getElementById("tx"), pwd = document.getElementById("pwd");
+    tx.onfocus = function () {
+        if (this.value != "  请输入密码")
             return;
         this.style.display = "none";
-        pwd_old.style.display = "";
-        pwd_old.value = "";
-        pwd_old.focus();
+        pwd.style.display = "";
+        pwd.value = "";
+        pwd.focus();
     }
-    pwd_old.onblur = function () {
+    pwd.onblur = function () {
         if (this.value != "")
             return;
         this.style.display = "none";
-        tx_old.style.display = "";
-        tx_old.value = "请输入原密码";
+        tx.style.display = "";
+        tx.value = "  请输入密码";
     }
-    var tx_new = document.getElementById("tx_new"), pwd_new = document.getElementById("pwd_new");
-    tx_new.onfocus = function () {
-        if (this.value != "请输入新密码")
+    var tx_c = document.getElementById("tx_c"), pwd_c = document.getElementById("pwd_c");
+    tx_c.onfocus = function () {
+        if (this.value != "  请输入确认密码")
             return;
         this.style.display = "none";
-        pwd_new.style.display = "";
-        pwd_new.value = "";
-        pwd_new.focus();
+        pwd_c.style.display = "";
+        pwd_c.value = "";
+        pwd_c.focus();
     }
-    pwd_new.onblur = function () {
+    pwd_c.onblur = function () {
         if (this.value != "")
             return;
         this.style.display = "none";
-        tx_new.style.display = "";
-        tx_new.value = "请输入新密码";
+        tx_c.style.display = "";
+        tx_c.value = "  请输入确认密码";
     }
     </script>
-    <div style="position: absolute;
+
+
+    <div style="position: relative;
+            float:top;
             margin-left: 0px;
-            margin-top: 1015px;
+            margin-top: 0px;
             height: 300px;
             width: 1200px;
             background-color: rgba(191,217,254,1);">
