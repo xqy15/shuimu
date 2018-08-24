@@ -28,6 +28,9 @@ def test(request):
 def page1(request):
     return render(request, 'page1.html')
 
+def page2(request):
+    return render(request, 'page2.html')
+
 def page3(request):
     return render(request, 'page3.html')
 
@@ -45,3 +48,9 @@ def page6(request):
 
 def page7(request):
     return render(request, 'page7.html')
+
+def page8(request):
+    return render(request, 'page8.html')
+
+def page9(request):
+    return render(request, 'page9.html')

@@ -1,0 +1,629 @@
+{% load static %}
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+    #Rectangle2{
+        color: rgba(234,235,246,1);
+        opacity: 100%;
+        border-radius: 0px;
+    }
+    #关于我们{
+        color: rgba(201,63,71,1);
+        opacity: 100%;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    #市场新锐{
+        color: rgba(0,0,0,1);
+        opacity: 100%;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    #rectangle1{
+        border-style:solid;
+        border-width:1px;
+        border-color: rgba(151,151,151,1);
+        opacity: 100%;
+        border-radius: 0px;
+    }
+    #搜索{
+        color: rgba(0,0,0,1);
+        opacity: 100%;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    #艺术风格{
+        color: rgba(0,0,0,1);
+        opacity: 100%;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    #输入{
+        color: rgba(0,0,0,1);
+        opacity: 65%;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    #变量添加{
+        color: rgba(0,0,0,1);
+        opacity: 100%;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    #名称{
+        color: rgba(0,0,0,1);
+        opacity: 100%;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    #共享艺术，美好生活{
+        color: rgba(255,255,255,1);
+        opacity: 100%;
+        font-size: 18px;
+        line-height: 24px;
+      }
+    #科技，美好未来生活{
+        color: rgba(255,255,255,1);
+        opacity: 100%;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    #提交搜索{
+        opacity: 100%;
+        border:0px;
+        background-color: rgba(0,0,0,0);
+        width:20px;
+        height:20px;
+        background-image:url("{% static 'frontend/image/page1/搜索.png' %}");
+      }
+      #数字{
+        color: rgba(0,0,0,1);
+        opacity: 100%;
+        font-size: 18px;
+        line-height: 25px;
+      }
+    </style>
+  </head>
+  <body>
+      <div style="position: absolute;
+          width:1200px;
+          height:60px;
+          margin-top: 0px;">
+          <div style="position: relative;
+              float:left;
+              margin-top: 0px;
+              margin-left: 100px;">
+              <img src="{% static 'frontend/image/page1/ArtPartner logo2.png' %}"/>
+          </div>
+          <div id="艺术社区" style="position: relative;
+              float:left;
+              margin-top: 15px;
+              margin-left: 50px;">
+              <b>关于我们</b>
+          </div>
+          <div id="关于我们" style="position: relative;
+              float:left;
+              margin-top: 15px;
+              margin-left: 50px;">
+              <b>艺术社区</b>
+          </div>
+          <div id="艺术社区" style="position: relative;
+              float:left;
+              margin-top: 15px;
+              margin-left: 50px;">
+              <b>why us</b>
+          </div>
+          <div id="艺术社区" style="position: relative;
+              float:left;
+              margin-top: 15px;
+              margin-left: 50px;">
+              <b>合作伙伴</b>
+          </div>
+          <div id="艺术社区" style="position: relative;
+              float:left;
+              margin-top: 15px;
+              margin-left: 50px;">
+              <b>开始投资</b>
+          </div>
+          <div id="艺术社区" style="position: relative;
+              float:left;
+              margin-top: 15px;
+              margin-left: 50px;">
+              <b>查看更多</b>
+          </div>
+          <div style="position: relative;
+              float:left;
+              margin-top: 15px;
+              margin-left: 5px;">
+              <img src="{% static 'frontend/image/page1/三角形（顶部）.png' %}"/>
+          </div>
+          <div style="position: relative;
+              float:left;
+              margin-top: 15px;
+              margin-left: 100px;">
+              <img src="{% static 'frontend/image/page1/分割线（顶部）.png' %}"/>
+          </div>
+          <div style="position: relative;
+              float:left;
+              margin-top: 15px;
+              margin-left: 20px;">
+              <img src="{% static 'frontend/image/page1/登陆.png' %}"/>
+          </div>
+          <div style="position: relative;
+              float:left;
+              margin-top: 15px;
+              margin-left: 20px;">
+              <img src="{% static 'frontend/image/page1/收藏.png' %}"/>
+          </div>
+          <div style="position: relative;
+              float:left;
+              margin-top: 15px;
+              margin-left: 20px;">
+              <img src="{% static 'frontend/image/page1/购物车.png' %}"/>
+          </div>
+          <div style="position: relative;
+              float:left;
+              margin-top: 15px;
+              margin-left: 20px;">
+              <img src="{% static 'frontend/image/page1/搜索.png' %}"/>  
+          </div>
+      </div>
+      <div style="position: absolute;
+          width:1200px;
+          height:1px;
+          margin-left:0px;
+          margin-top: 50px;">
+          <img src="{% static 'frontend/image/page3/线 顶部.png' %}" width="1200px"/>
+      </div>
+      <div style="position: absolute;
+          width:1035px;
+          margin-left:83px;
+          margin-top: 105px;">
+          <img src="{% static 'frontend/image/page3/线 顶部.png' %}"/>
+      </div>
+      <div id="市场新锐" style="position: absolute;
+          width:200px;
+          margin-left:83px;
+          margin-top: 140px;">
+          市场新锐
+      </div>
+      <div style="position: absolute;
+          width:1035px;
+          margin-left:83px;
+          margin-top: 170px;">
+          <img src="{% static 'frontend/image/page3/线 顶部.png' %}"/>
+      </div>
+    
+      <div style="position: absolute;
+          width:1200px;
+          margin-left:0px;
+          margin-top: 250px;">
+          <div style="position: relative;
+          float: left;
+          margin-left:283px;">
+            <img src="{% static 'frontend/image/page1/ArtPartner logo2.png' %}"/>
+          </div>
+
+          <div id="搜索" style="position: relative;
+          float: left;
+          margin-left:30px;
+          margin-top:10px;
+          width: 60px;
+          text-align:center;">
+          搜索 
+          </div>
+          <form>
+          <div style="position: relative;
+          float: left;
+          margin-left:30px;
+          margin-top:0px;
+          width: 400px;">
+          
+            <input id="输入" type="text" value="  请输入艺术家或艺术作品名称" name="name" style="width:400px;border:1px solid;border-radius:8px; height:40px;">
+            
+          
+          </div>
+          <div style="position: relative;
+          float: left;
+          margin-left:20px;
+          margin-top:10px;
+          width: 20px;">
+            <input id="提交搜索" type="submit" value=""/>
+          </div>
+          </form> 
+
+      </div>
+
+      <div style="position: absolute;
+          width:1035px;
+          margin-left:83px;
+          margin-top: 315px;">
+          <img src="{% static 'frontend/image/page3/线 顶部.png' %}"/>
+      </div>
+
+      <div id="艺术风格" style="position: absolute;
+          width:1100px;
+          margin-left:83px;
+          margin-top: 350px;">
+          <div style="position: relative;
+          float: left;
+          width:80px;
+          margin-left:90px;
+          margin-top: 0px;">
+          艺术风格
+          </div>
+          <div style="position: relative;
+          float: left;
+          width:80px;
+          margin-left:160px;
+          margin-top: 0px;">
+          投资总额
+          </div>
+          <div style="position: relative;
+          float: left;
+          width:80px;
+          margin-left:160px;
+          margin-top: 0px;">
+          投资数量
+          </div>
+          <div style="position: relative;
+          float: left;
+          width:100px;
+          margin-left:160px;
+          margin-top: 0px;">
+          投资回报率
+          </div>
+      </div>
+      <div style="position: absolute;
+          width:1035px;
+          margin-left:83px;
+          margin-top: 380px;">
+          <img src="{% static 'frontend/image/page3/线 顶部.png' %}"/>
+      </div>
+
+      <div id="变量添加" style="position: absolute;
+          width:1100px;
+          margin-left:83px;
+          margin-top: 420px;">
+          <div style="position: relative;
+          float: left;
+          width:80px;
+          margin-left:40px;
+          margin-top: 0px;">
+          变量添加
+          </div>
+          <div style="position: relative;
+          float: left;
+          width:80px;
+          margin-left:45px;
+          margin-top: 0px;">
+          变量添加
+          </div>
+          <div style="position: relative;
+          float: left;
+          width:80px;
+          margin-left:45px;
+          margin-top: 0px;">
+          变量添加
+          </div>
+      </div>
+
+      <div  style="position: absolute;
+              height: 1000px;
+              width:390px;
+              margin-left:140px;
+              margin-top:520px;
+              ">
+               <div  style="position: relative;
+               float:top;
+               height: 290px;
+               width:390px;
+               margin-left:0px;
+               margin-top:0px;
+              ">
+                <div id = "rectangle1" style="position: relative;
+                      height: 200px;
+                      width:390px;
+                      margin-left:0px;
+                      margin-top:0px;">
+                </div>
+                <div id = "名称" style="position: relative;
+                      float:top;
+                      margin-left:0px;
+                      margin-top: 25px;">
+                      艺术作品名称
+                </div>
+                <div id = "名称" style="position: relative;
+                    float:top;
+                    margin-left:0px;
+                    margin-top: 25px;">
+                    艺术家名称
+                </div>
+              </div>
+              <div  style="position: relative;
+               float:top;
+               height: 290px;
+               width:390px;
+               margin-left:0px;
+               margin-top:0px;
+              ">
+                <div id = "rectangle1" style="position: relative;
+                      height: 200px;
+                      width:390px;
+                      margin-left:0px;
+                      margin-top:25px;">
+                </div>
+                <div id = "名称" style="position: relative;
+                      float:top;
+                      margin-left:0px;
+                      margin-top: 25px;">
+                      艺术作品名称
+                </div>
+                <div id = "名称" style="position: relative;
+                    float:top;
+                    margin-left:0px;
+                    margin-top: 25px;">
+                    艺术家名称
+                </div>
+              </div>
+              <div  style="position: relative;
+               float:top;
+               height: 290px;
+               width:390px;
+               margin-left:0px;
+               margin-top:0px;
+              ">
+                <div id = "rectangle1" style="position: relative;
+                      height: 200px;
+                      width:390px;
+                      margin-left:0px;
+                      margin-top:25px;">
+                </div>
+                <div id = "名称" style="position: relative;
+                      float:top;
+                      margin-left:0px;
+                      margin-top: 25px;">
+                      艺术作品名称
+                </div>
+                <div id = "名称" style="position: relative;
+                    float:top;
+                    margin-left:0px;
+                    margin-top: 25px;">
+                    艺术家名称
+                </div>
+              </div>
+      </div>
+
+      <div  style="position: absolute;
+              height: 1000px;
+              width:390px;
+              margin-left:690px;
+              margin-top:520px;
+              ">
+               <div  style="position: relative;
+               float:top;
+               height: 290px;
+               width:390px;
+               margin-left:0px;
+               margin-top:0px;
+              ">
+                <div id = "rectangle1" style="position: relative;
+                      height: 200px;
+                      width:390px;
+                      margin-left:0px;
+                      margin-top:0px;">
+                </div>
+                <div id = "名称" style="position: relative;
+                      float:top;
+                      margin-left:0px;
+                      margin-top: 25px;">
+                      艺术作品名称
+                </div>
+                <div id = "名称" style="position: relative;
+                    float:top;
+                    margin-left:0px;
+                    margin-top: 25px;">
+                    艺术家名称
+                </div>
+              </div>
+              <div  style="position: relative;
+               float:top;
+               height: 290px;
+               width:390px;
+               margin-left:0px;
+               margin-top:0px;
+              ">
+                <div id = "rectangle1" style="position: relative;
+                      height: 200px;
+                      width:390px;
+                      margin-left:0px;
+                      margin-top:25px;">
+                </div>
+                <div id = "名称" style="position: relative;
+                      float:top;
+                      margin-left:0px;
+                      margin-top: 25px;">
+                      艺术作品名称
+                </div>
+                <div id = "名称" style="position: relative;
+                    float:top;
+                    margin-left:0px;
+                    margin-top: 25px;">
+                    艺术家名称
+                </div>
+              </div>
+              <div  style="position: relative;
+               float:top;
+               height: 290px;
+               width:390px;
+               margin-left:0px;
+               margin-top:0px;
+              ">
+                <div id = "rectangle1" style="position: relative;
+                      height: 200px;
+                      width:390px;
+                      margin-left:0px;
+                      margin-top:25px;">
+                </div>
+                <div id = "名称" style="position: relative;
+                      float:top;
+                      margin-left:0px;
+                      margin-top: 25px;">
+                      艺术作品名称
+                </div>
+                <div id = "名称" style="position: relative;
+                    float:top;
+                    margin-left:0px;
+                    margin-top: 25px;">
+                    艺术家名称
+                </div>
+              </div>
+      </div>
+
+      <div style="position: absolute;
+        height:100px;
+        width:800px;
+        margin-left:300px;
+        margin-top: 1600px;">
+        <div 
+            style="position: relative; 
+            float:left;
+            margin-top: 0px;
+            margin-left: 0px;
+            width: 50px;
+            height: 34px;
+            line-height:30px;
+            border-style:solid;
+            border-width:1px;
+            ">
+            <img style="margin-left:12px;margin-top:7px;" src="{% static 'frontend/image/page52/上一页（三角形）.png' %}"  />
+        </div>
+        <div id = "数字" 
+            style="position: relative; 
+            float:left;
+            margin-top: 0px;
+            margin-left: 80px;
+            line-height:0px;
+            ">
+            <p>1</p>
+        </div>
+        <div id = "数字" 
+            style="position: relative; 
+            float:left;
+            margin-top: 0px;
+            margin-left: 30px;
+            line-height:0px;
+            ">
+            <p>2</p>
+        </div>
+        <div id = "数字" 
+            style="position: relative; 
+            float:left;
+            margin-top: 0px;
+            margin-left: 30px;
+            line-height:0px;
+            ">
+            <p>3</p>
+        </div>
+        <div id = "数字" 
+            style="position: relative; 
+            float:left;
+            margin-top: 0px;
+            margin-left: 30px;
+            line-height:0px;
+            ">
+            <p>4</p>
+        </div>
+        <div id = "数字" 
+            style="position: relative; 
+            float:left;
+            margin-top: 0px;
+            margin-left: 30px;
+            line-height:0px;
+            ">
+            <p>5</p>
+        </div>
+        <div id = "数字" 
+            style="position: relative; 
+            float:left;
+            margin-top: 0px;
+            margin-left: 30px;
+            line-height:0px;
+            ">
+            <p>6</p>
+        </div>
+        <div id = "数字" 
+            style="position: relative; 
+            float:left;
+            margin-top: 0px;
+            margin-left: 30px;
+            line-height:0px;
+            ">
+            <p>7</p>
+        </div>
+        <div id = "数字" 
+            style="position: relative; 
+            float:left;
+            margin-top: 0px;
+            margin-left: 30px;
+            line-height:0px;
+            ">
+            <p>8</p>
+        </div>
+        <div 
+            style="position: relative; 
+            float:left;
+            margin-top: 0px;
+            margin-left: 100px;
+            width: 50px;
+            height: 34px;
+            line-height:30px;
+            border-style:solid;
+            border-width:1px;
+            ">
+            <img style="margin-left:12px;margin-top:7px;" src="{% static 'frontend/image/page52/下一页（三角形）.png' %}"  />
+        </div>
+
+    </div>
+      
+
+      <div style="position: absolute;
+          margin-left: 0px;
+          margin-top: 1815px;
+          margin-bottom:0px;
+          height: 300px;
+          width: 1200px;
+          background-color: rgba(191,217,254,1);">
+          <!-- <b>partner块</b> -->
+          <div id = "共享艺术，美好生活" style="position: relative;
+              float:left;
+              margin-left:200px;
+              margin-top:100px;"
+              align="center">
+              <b>keep in touch</b></br></br>
+              <img src="{% static 'frontend/image/page1/底部蓝色信息框/地址.png' %}"  />
+              <img src="{% static 'frontend/image/page1/底部蓝色信息框/电话.png' %}"  />
+              <img src="{% static 'frontend/image/page1/底部蓝色信息框/邮箱.png' %}"  />
+          </div>
+          <div  style="position: relative;
+              float:left;
+              margin-left:200px;
+              margin-top:100px;"
+              align="center">
+              <img src="{% static 'frontend/image/page1/ArtPartner logo1.png' %}"  />
+          </div>
+          <div id = "科技，美好未来生活" style="position: relative;
+              float:left;
+              margin-left:200px;
+              margin-top:100px;"
+              >
+              </br>
+              <b align="center">“科技，美好未来生活”</b></br></br></br></br></br></br>
+              <b align="right">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp北京水木未来科技有限公司</b>
+            </div>
+        </div>
+  </body>
+</html>
