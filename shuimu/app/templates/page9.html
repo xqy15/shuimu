@@ -12,11 +12,19 @@
                     width: 300px;
                     margin: 0;
                 }
+
             #关于我们{
                 color: rgba(201,63,71,1);
                 opacity: 100%;
                 font-size: 14px;
                 line-height: 17px;
+            }
+            #rectangle1{
+                border-style:solid;
+                border-width:1px;
+                border-color: rgba(151,151,151,1);
+                opacity: 100%;
+                border-radius: 0px;
             }
             #合作伙伴{
                 color: rgba(194,197,223,1);
@@ -165,420 +173,251 @@
                 margin-top: 50px;">
                 <img src="{% static 'frontend/image/page3/线 顶部.png' %}" width="1200px"/>
             </div>
-            
-            <div id="rectangle" style="position: absolute;
-                width:500px;
-                height:500px;
-                margin-left:50px;
-                margin-top: 110px;">
-                <div style="
-                    position: relative;
-                    float:left;
-                    margin-top: 466px;
-                    margin-left: 170px;">
-                    <img src="{% static 'frontend/image/page7/圆（主展示图框内）.png' %}"/>
-                </div>
-                <div style="
-                    position: relative;
-                    float:left;
-                    margin-top: 466px;
-                    margin-left: 42px;">
-                    <img src="{% static 'frontend/image/page7/圆（主展示图框内）.png' %}"/>
-                </div>
-                <div style="
-                    position: relative;
-                    float:left;
-                    margin-top: 466px;
-                    margin-left: 42px;">
-                    <img src="{% static 'frontend/image/page7/圆（主展示图框内）.png' %}"/>
-                </div>
-                <div style="
-                    position: relative;
-                    float:left;
-                    margin-top: 460px;
-                    margin-left: 150px;">
-                    <img src="{% static 'frontend/image/page7/图片放大.png' %}"/>
-                </div>
-            </div>
 
-            <div id = "油画" style="position: absolute;
-                margin-left:590px;
-                margin-top: 110px;
-                width:50px;
-                line-height:2px;
-                text-align:center;">
-                <p>油画</p>
-            </div>
 
             <div style="position: absolute;
-                margin-left:660px;
-                margin-top: 100px;
-                width:430px;">
-                <div id = "标题1" style="position: relative;
-                    float:top;
-                    margin-left:0px;
-                    margin-top: 0px;
-                    width:430px;">
-                    <p>竹久梦二的一生，多情而短暂，绚烂的才华喷薄而出，像极了那樱花</p>
-                </div>
-
-                <div id = "标题2" style="position: relative;
-                    float:top;
-                    margin-left:0px;
-                    margin-top: 0px;
-                    width:430px;">
-                    <p>对画家丰子恺来说，梦二是启蒙他绘画生涯的灵感缪斯</p>
-                </div>
-
-                <div style="position: relative;
-                    float:top;
-                    margin-top: 0px;
-                    margin-left: 0px;
-                    width:451px;
-                    height:1px;">
-                    <img src="{% static 'frontend/image/page7/分割线1.png' %}"/>
-                </div>
-
-                <div id="价格" style="position: relative;
-                    float:top;
-                    margin-left:0px;
-                    margin-top: 30px;
-                    width:430px;">
-                    <div id="价格" style="position: relative;
-                    float:left;
-                    margin-left:0px;
-                    margin-top: 0px;
-                    width:50px;">
-                        <p>价格:</p>
-                    </div>
-                    
-                    <div id="price" style="position: relative;
-                    float:left;
-                    margin-left:20px;
-                    margin-top: -10px;
-                    width:200px;">
-                    <p>819.00 RMB</p>
-                    </div>
-                </div>
-
-                <div id="配送" style="position: relative;
-                    float:top;
-                    margin-left: 0px;
-                    margin-top: 100px;
-                    width:430px;">
-
-                    <div style="position: relative;
-                    float:left;
-                    margin-left:0px;
-                    margin-top: 0px;
-                    width:50px;">
-                        <p>配送至:</p>
-                    </div>
-                    
-                    <div style="position: relative;
-                    float:left;
-                    margin-left:10px;
-                    margin-top: 0px;
-                    width:300px;">
-                    <p>北京市朝阳区</p>
-                    </div>
-                </div>
-
-
-                <div style="position: relative;
-                    float:top;
-                    margin-top: 10px;
-                    margin-left: 0px;
-                    width:451px;
-                    height:1px;">
-                    <img src="{% static 'frontend/image/page7/分割线1.png' %}"/>
-                </div>
-
-                <div style="position: relative;
-                    float:top;
-                    margin-left: 0px;
-                    margin-top: 100px;
-                    width:430px;">
-
-                    <div style="position: relative;
-                    float:left;
-                    margin-left:0px;
-                    margin-top: 0px;
-                    text-align:center;
-                    line-height:20px;
-                    width:50px;
-                    height:50px;
-                    border:1px solid;">
-                        <p>1</p>
-                    </div>
-                    <div style="position: relative;
                         float:left;
+                        width: 200px;
+                        height:90px;
+                        margin-left:800px;
+                        margin-top: 90px;">
+                <div style="position: relative;
+                        float:left;
+                        width: 20px;
+                        height: 20px;
                         margin-left:0px;
-                        margin-top: 0px;
-                        text-align:center;
-                        line-height:0px;
-                        width:25px;
-                        height:50px;
-                        border:1px solid;">
-                        <div style="position: relative;
-                            float:top;
-                            margin-left:0px;
-                            margin-top: 0px;
-                            text-align:center;
-                            line-height:20px;
-                            width:23px;
-                            height:23px;
-                            border:1px solid;">
-                            +
-                        </div>
-                        <div style="position: relative;
-                            float:top;
-                            margin-left:0px;
-                            margin-top: 0px;
-                            text-align:center;
-                            line-height:20px;
-                            width:23px;
-                            height:23px;
-                            border:1px solid;">
-                            -
-                        </div>
-                    </div>
-                    
-                    <div id="加入购物车" style="position: relative;
+                        margin-top: 80px;">
+                        <img src="{% static 'frontend/image/page9/爱心.png' %}" />
+                </div>
+                <div style="position: relative;
                         float:left;
+                        width: 20px;
+                        height: 20px;
                         margin-left:25px;
-                        margin-top: 0px;
-                        width:120px;
-                        height:50px;
-                        text-align:center;">
-                    <p>加入购物车</p>
-                    </div>
-
-                    <div style="position: relative;
-                        float:left;
-                        margin-top: 20px;
-                        margin-left: 30px;
-                        width:20px;
-                        height:21px;">
-                        <img src="{% static 'frontend/image/page7/心（收藏）.png' %}"/>
-                    </div>
-
-                     <div id="收藏" style="position: relative;
-                        float:left;
-                        margin-left:10px;
-                        margin-top: 0px;
-                        width:40px;
-                        height:50px;
-                        text-align:center;">
-                    <p>收藏</p>
-                    </div>
-                    
-                </div>
-
-            </div>
-
-            
-            <div style="position: absolute;
-                margin-left:61px;
-                margin-top: 700px;
-                width:200px;">
-                <div id = "作品推荐" style="position: relative;
-                    float:top;
-                    margin-left:0px;
-                    margin-top: 0px;
-                    width:430px;">
-                    <p>作品推荐</p>
-                </div>
-
-                <div id="作品推荐正文" style="position: relative;
-                    float:top;
-                    margin-left: 0px;
-                    margin-top: 18px;
-                    width:430px;">
-
-                    <div style="position: relative;
-                    float:top;
-                    margin-left:0px;
-                    margin-top: 0px;
-                    width:150px;">
-                        <p>VHILS aka Alexandre Farto - Periferia Uniforme</p>
-                    </div>
-                    
-                    <div id = "rectangle" style="position: relative;
-                    float:top;
-                    margin-left:10px;
-                    margin-top: 0px;
-                    width:150px;
-                    height:100px;
-                    ">
-                    
-                    </div>
-                </div>
-
-                <div id="作品推荐正文" style="position: relative;
-                    float:top;
-                    margin-left: 0px;
-                    margin-top: 18px;
-                    width:430px;">
-
-                    <div style="position: relative;
-                    float:top;
-                    margin-left:0px;
-                    margin-top: 0px;
-                    width:150px;">
-                        <p>VHILS aka Alexandre Farto - Periferia Uniforme</p>
-                    </div>
-                    
-                    <div id = "rectangle" style="position: relative;
-                    float:top;
-                    margin-left:10px;
-                    margin-top: 0px;
-                    width:150px;
-                    height:100px;
-                    ">
-                    
-                    </div>
-                </div>
-
-                <div id="作品推荐正文" style="position: relative;
-                    float:top;
-                    margin-left: 0px;
-                    margin-top: 18px;
-                    width:430px;">
-
-                    <div style="position: relative;
-                    float:top;
-                    margin-left:0px;
-                    margin-top: 0px;
-                    width:150px;">
-                        <p>VHILS aka Alexandre Farto - Periferia Uniforme</p>
-                    </div>
-                    
-                    <div id = "rectangle" style="position: relative;
-                    float:top;
-                    margin-left:10px;
-                    margin-top: 0px;
-                    width:150px;
-                    height:100px;
-                    ">
-                    
-                    </div>
-                </div>
-
-                <div id="作品推荐正文" style="position: relative;
-                    float:top;
-                    margin-left: 0px;
-                    margin-top: 18px;
-                    width:430px;">
-
-                    <div style="position: relative;
-                    float:top;
-                    margin-left:0px;
-                    margin-top: 0px;
-                    width:150px;">
-                        <p>VHILS aka Alexandre Farto - Periferia Uniforme</p>
-                    </div>
-                    
-                    <div id = "rectangle" style="position: relative;
-                    float:top;
-                    margin-left:10px;
-                    margin-top: 0px;
-                    width:150px;
-                    height:100px;
-                    ">
-                    </div>
-                </div>
-            </div>
-
-            <div style="position: absolute;
-                margin-left:360px;
-                margin-top: 700px;
-                width:820px;">
-                <div id = "作品信息" style="position: relative;
-                    float:top;
-                    margin-left:0px;
-                    margin-top: 0px;
-                    width:820px;
-                    text-align:center;">
-                    <p>作品信息</p>
-                </div>
-
-                <div id = "作品信息正文" style="position: relative;
-                    float:top;
-                    margin-left:0px;
-                    margin-top: 0px;
-                    width:820px;
-                    text-align:center;">
-                    <p>竹久梦二的一生，多情而短暂，绚烂的才华喷薄而出，像极了那樱花</p>
+                        margin-top: 80px;">
+                        <img src="{% static 'frontend/image/page9/link-分享.png' %}" />
                 </div>
 
                 <div style="position: relative;
-                    float:top;
-                    margin-top: 0px;
-                    margin-left: 0px;
-                    width:816px;
-                    height:1px;">
-                    <img src="{% static 'frontend/image/page7/分割线（作品信息）.png' %}"/>
+                        float:left;
+                        width: 20px;
+                        height: 20px;
+                        margin-left:25px;
+                        margin-top: 80px;">
+                        <img src="{% static 'frontend/image/page9/加入投资报告list.png' %}" />
                 </div>
 
-                <div id="rectangle" style="position: relative;
-                    float:top;
-                    margin-left:0px;
-                    margin-top: 90px;
-                    width:816px;
-                    height:520px;">
+                <div style="position: relative;
+                        float:left;
+                        width: 20px;
+                        height: 20px;
+                        margin-left:25px;
+                        margin-top: 0px;">
+                        <img src="{% static 'frontend/image/page9/生成投资报告.png' %}" />
+                </div>
+        
+            </div>
+
+            <div style="position: absolute;
+                width:160px;
+                margin-left:80px;
+                margin-top: 220px;">
+                <div id = "作家名" style="position: relative;
+                float:top;
+                width:160px;
+                margin-left:0px;
+                margin-top: 0px;">
+                文森特 梵高
                 </div>
 
-                <div id="作品介绍中文" style="position: relative;
-                    float:top;
-                    margin-left: 220px;
-                    margin-top: 50px;
-                    width:394px;
-                    ">
-                    <p>技术：丝绢网印画</p>
-                    <p>签名：带签名</p>
-                    <p>状态：如新</p>
-                    <p>时间段：2000-2009</p>
-                    <p>作品名称：Periferia Uniform</p>
-                    <p>艺术家：VHLS aks Alexandre Farto</p>
-                    <p>年代：2009</p>
-                    <p>总尺寸（高／宽／深以厘米计算）：70/50cm</p>
-                    <p>版本：200</p>
-                    <p>带镜框出售：不带镜框</p>
+                <div id = "rectangle1" style="position: relative;
+                float:top;
+                width:160px;
+                height:260px;
+                margin-left:0px;
+                margin-top: 20px;">
+                
                 </div>
 
-                <div id="rectangle" style="position: relative;
-                    float:top;
-                    margin-left:0px;
-                    margin-top: 90px;
-                    width:816px;
-                    height:520px;">
-                </div>
-
-
-                <div id="作品介绍英文" style="position: relative;
-                    float:top;
-                    margin-left: 0px;
-                    margin-top: 50px;
-                    width:816px;">
-                    <p>VHILS is the tag name of Portuguese graffiti/street artist Alexandre  Manuel Dias Farto</p>
-                    <p></p>
-                    <p>Title:"Periferia Uniforme"</p>
-                    <p>Multilayered print using drawing inks, bleach, screenprit inks and varnish.</p>
-                    <p>Edited by POW on 2009, the printmake of BANKSY. (Pictures On Walls)</p>
-                    <p>Stamp of POW</p>
-                    <p>HandSigned & numbered Limited Edition of 200, all different because handfinished by the artist.</p>
-                    <p>SIZE: 70*50cm/ 27.6*19.7 inch</p>
-                    <p>Attached receipt of original purchase from POW</p>
-                </div>
-                    
+                <div id = "内容介绍" style="position: relative;
+                float:top;
+                width:160px;
+                margin-left:0px;
+                margin-top: 40px;">
+                梵高出生于1853年3月30日荷兰乡村津德尔特的一个新教牧师家庭。。。。。
                 </div>
 
             </div>
+            
+            <div style="position: absolute;
+                width:2px;
+                margin-left:300px;
+                margin-top: 220px;">
+                <img src="{% static 'frontend/image/page6/中部分割线.png' %}" height=1200px width=1px/>
+            </div>
+
+            <div style="position: absolute;
+                margin-left:350px;
+                margin-top: 130px;">
+                <div id = "作品名" style="position: relative;
+                float:top;
+                width:400px;
+                margin-left:0px;
+                margin-top: 0px;">
+                《罗纳河上的星夜》
+                </div>
+
+
+                <div id = "作者名" style="position: relative;
+                float:top;
+                width:400px;
+                margin-left:0px;
+                margin-top: 20px;">
+                文森特 梵高
+                </div>
+
+                <div id = "rectangle1" style="position: relative;
+                float:top;
+                width:760px;
+                height:540px;
+                margin-left:20px;
+                margin-top: 40px;">
+                
+                </div>
+
+                <div id = "内容介绍" style="position: relative;
+                float:top;
+                width:700px;
+                margin-left:55px;
+                margin-top: 55px;">
+                    运用冷色迷人的深蓝色短信铺满整个夜空，强而有力的笔触表达出液的深沉忧郁无法预测，而点缀其上的微明星子，与倒映在河面上的瓦斯等相互辉映，深蓝。。。。。。。
+                </div>
+
+                <div id = "更多作品" style="position: relative;
+                float:top;
+                width: 100px;
+                margin-left:0px;
+                margin-top: 60px;">
+                更多作品
+                </div>
+
+                <div style="position: relative;
+                float:top;
+                width: 800px;
+                height:250px;
+                margin-left:25px;
+                margin-top: 40px;">
+                
+                    <div style="position: relative;
+                        float:left;
+                        width: 350px;
+                        margin-left:0px;
+                        margin-top: 0px;">
+                        <div id = "rectangle1" style="position: relative;
+                        float:top;
+                        width: 350px;
+                        height: 200px;
+                        margin-left:0px;
+                        margin-top: 0px;">
+                        </div>
+
+                        <div id = "艺术作品名称" style="position: relative;
+                        float:top;
+                        width: 350px;
+                        margin-left:0px;
+                        margin-top: 20px;">
+                        艺术作品名称
+                        </div>         
+                    </div>
+                    
+
+                    <div style="position: relative;
+                        float:left;
+                        width: 350px;
+                        margin-left:45px;
+                        margin-top: 0px;">
+                        <div id = "rectangle1" style="position: relative;
+                        float:top;
+                        width: 350px;
+                        height: 200px;
+                        margin-left:0px;
+                        margin-top: 0px;">
+                        </div>
+
+                        <div id = "艺术作品名称" style="position: relative;
+                        float:top;
+                        width: 350px;
+                        margin-left:0px;
+                        margin-top: 20px;">
+                        艺术作品名称
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div style="position: relative;
+                float:top;
+                width: 800px;
+                margin-left:25px;
+                margin-top: 40px;">
+                
+                    <div style="position: relative;
+                        float:left;
+                        width: 350px;
+                        margin-left:0px;
+                        margin-top: 0px;">
+                        <div id = "rectangle1" style="position: relative;
+                        float:top;
+                        width: 350px;
+                        height: 200px;
+                        margin-left:0px;
+                        margin-top: 0px;">
+                        </div>
+
+                        <div id = "艺术作品名称" style="position: relative;
+                        float:top;
+                        width: 350px;
+                        margin-left:0px;
+                        margin-top: 20px;">
+                        艺术作品名称
+                        </div>         
+                    </div>
+                    
+
+                    <div style="position: relative;
+                        float:left;
+                        width: 350px;
+                        margin-left:45px;
+                        margin-top: 0px;">
+                        <div id = "rectangle1" style="position: relative;
+                        float:top;
+                        width: 350px;
+                        height: 200px;
+                        margin-left:0px;
+                        margin-top: 0px;">
+                        </div>
+
+                        <div id = "艺术作品名称" style="position: relative;
+                        float:top;
+                        width: 350px;
+                        margin-left:0px;
+                        margin-top: 20px;">
+                        艺术作品名称
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
 
             <div style="position: absolute;
                 margin-left: 0px;
-                margin-top: 3615px;
+                margin-top: 2100px;
                 height: 300px;
                 width: 1200px;
                 background-color: rgba(191,217,254,1);">
